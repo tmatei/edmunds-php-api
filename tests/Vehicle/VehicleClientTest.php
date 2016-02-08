@@ -4,10 +4,8 @@ namespace TudorMatei\Edmunds\Tests\Vehicle;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Psr7\Response;
 use TudorMatei\Edmunds\Tests\BaseTest;
-use TudorMatei\Edmunds\Vehicle\Client\Vehicle\VinDecodingClient;
-use TudorMatei\Edmunds\Vehicle\Response\VinDecodingResponse;
+use TudorMatei\Edmunds\Vehicle\VehicleClient;
 
 /**
  * Created by IntelliJ IDEA.
@@ -23,6 +21,18 @@ abstract class VehicleClientTest extends BaseTest
     {
         parent::setUp();
         $this->mockPathPrefix = __DIR__ . DIRECTORY_SEPARATOR . 'mocks' . DIRECTORY_SEPARATOR;
+    }
+
+    /**
+     * @param MockHandler $mock
+     * @return VehicleClient
+     */
+    protected function getClient(MockHandler $mock)
+    {
+        $httpClient = new Client(['handler' => HandlerStack::create($mock)]);
+        $client = new VehicleClient('test', $httpClient);
+        $client->setDebug(true);
+        return $client;
     }
 
 }

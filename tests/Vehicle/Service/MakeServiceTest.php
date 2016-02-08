@@ -1,13 +1,11 @@
 <?php
 
-namespace TudorMatei\Edmunds\Tests\Vehicle\Client;
-use GuzzleHttp\Client;
+namespace TudorMatei\Edmunds\Tests\Vehicle\Service;
 use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use TudorMatei\Edmunds\Tests\Vehicle\VehicleClientTest;
-use TudorMatei\Edmunds\Vehicle\Client\MakeClient;
 use TudorMatei\Edmunds\Vehicle\Response\MakesResponse;
+use TudorMatei\Edmunds\Vehicle\Service\MakeService;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,7 +13,7 @@ use TudorMatei\Edmunds\Vehicle\Response\MakesResponse;
  * Date: 2/3/16
  * Time: 8:01 PM
  */
-class MakeClientTest extends VehicleClientTest
+class MakeServiceTest extends VehicleClientTest
 {
     public function setUp()
     {
@@ -30,18 +28,10 @@ class MakeClientTest extends VehicleClientTest
             new Response(200, ['Content-Type' => 'application/json'], $body)
         ]);
 
-        $vehicleClient = $this->getClient($mock);
-        $response = $vehicleClient->getListOfCarMakes();
+        $service = new MakeService($this->getClient($mock));
+        $response = $service->getListOfCarMakes();
 
         $this->assertInstanceOf(MakesResponse::class, $response);
-    }
-
-    protected function getClient(MockHandler $mock)
-    {
-        $httpClient = new Client(['handler' => HandlerStack::create($mock)]);
-        $client = new MakeClient('test', $httpClient);
-        $client->setDebug(true);
-        return $client;
     }
 
 }

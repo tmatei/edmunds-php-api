@@ -1,12 +1,18 @@
 <?php
-namespace TudorMatei\Edmunds\Vehicle\Client;
+namespace TudorMatei\Edmunds\Vehicle\Service;
 
 use TudorMatei\Edmunds\Vehicle\Response\StyleResponse;
 use TudorMatei\Edmunds\Vehicle\Response\StylesResponse;
 use TudorMatei\Edmunds\Vehicle\VehicleClient;
 
-class StyleClient extends VehicleClient
+class StyleService
 {
+    protected $client;
+
+    public function __construct(VehicleClient $client)
+    {
+        $this->client = $client;
+    }
 
     /**
      * Get the vehicle style details (i.e. colors, options, transmission, engine, squishVins, …etc)
@@ -18,7 +24,7 @@ class StyleClient extends VehicleClient
     public function getDetailsByCarMakeModelYear($make, $model, $year)
     {
         $data = [];
-        return $this->request($make . '/' . $model . '/' . $year . '/styles', $data, 2, StylesResponse::class);
+        return $this->client->request($make . '/' . $model . '/' . $year . '/styles', $data, 2, StylesResponse::class);
     }
 
     /**
@@ -36,6 +42,6 @@ class StyleClient extends VehicleClient
             'view' => $view
         ];
 
-        return $this->request('styles/' . $styleId, $data, 2, StyleResponse::class);
+        return $this->client->request('styles/' . $styleId, $data, 2, StyleResponse::class);
     }
 }

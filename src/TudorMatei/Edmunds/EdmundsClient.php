@@ -3,6 +3,7 @@
 namespace TudorMatei\Edmunds;
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
+use GuzzleHttp\Client;
 use JMS\Serializer\Naming\CamelCaseNamingStrategy;
 use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
 use JMS\Serializer\SerializerBuilder;
@@ -42,12 +43,12 @@ abstract class EdmundsClient
      */
     protected $debug = false;
 
-    public function __construct($apiKey, \GuzzleHttp\Client $httpClient = null)
+    public function __construct($apiKey, Client $httpClient = null)
     {
         AnnotationRegistry::registerLoader('class_exists');
 
         if (is_null($httpClient)) {
-            $httpClient = new \GuzzleHttp\Client();
+            $httpClient = new Client();
         }
 
         $this->apiKey = $apiKey;

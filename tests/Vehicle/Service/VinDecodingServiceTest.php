@@ -1,13 +1,11 @@
 <?php
 
 namespace TudorMatei\Edmunds\Tests\Vehicle\Client;
-use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
-use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use TudorMatei\Edmunds\Tests\Vehicle\VehicleClientTest;
-use TudorMatei\Edmunds\Vehicle\Client\VinDecodingClient;
 use TudorMatei\Edmunds\Vehicle\Response\VinDecodingResponse;
+use TudorMatei\Edmunds\Vehicle\Service\VinDecodingService;
 
 /**
  * Created by IntelliJ IDEA.
@@ -15,7 +13,7 @@ use TudorMatei\Edmunds\Vehicle\Response\VinDecodingResponse;
  * Date: 2/3/16
  * Time: 8:01 PM
  */
-class VinDecodingTest extends VehicleClientTest
+class VinDecodingServiceTest extends VehicleClientTest
 {
     public function setUp()
     {
@@ -34,8 +32,8 @@ class VinDecodingTest extends VehicleClientTest
             new Response(200, ['Content-Type' => 'application/json'], $body)
         ]);
 
-        $client = $this->getClient($mock);
-        $response = $client->getVinDetails('test');
+        $service = new VinDecodingService($this->getClient($mock));
+        $response = $service->getVinDetails('test');
 
         $this->assertInstanceOf(VinDecodingResponse::class, $response);
     }
@@ -48,11 +46,4 @@ class VinDecodingTest extends VehicleClientTest
         ];
     }
 
-    protected function getClient(MockHandler $mock)
-    {
-        $httpClient = new Client(['handler' => HandlerStack::create($mock)]);
-        $client = new VinDecodingClient('test', $httpClient);
-        $client->setDebug(true);
-        return $client;
-    }
 }

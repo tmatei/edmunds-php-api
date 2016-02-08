@@ -1,11 +1,17 @@
 <?php
-namespace TudorMatei\Edmunds\Vehicle\Client;
+namespace TudorMatei\Edmunds\Vehicle\Service;
 
 use TudorMatei\Edmunds\Vehicle\Response\TmvResponse;
 use TudorMatei\Edmunds\Vehicle\VehicleClient;
 
-class TrueMarketValueClient extends VehicleClient
+class TrueMarketValueService
 {
+    protected $client;
+
+    public function __construct(VehicleClient $client)
+    {
+        $this->client = $client;
+    }
 
     /**
      * Get the TMV® price for a old car by style ID, condition, mileage and ZIP code.
@@ -26,7 +32,7 @@ class TrueMarketValueClient extends VehicleClient
             'zip' => $zip,
         ];
 
-        return $this->request('tmv/tmvservice/calculateusedtmv', $data, 1, TmvResponse::class);
+        return $this->client->request('tmv/tmvservice/calculateusedtmv', $data, 1, TmvResponse::class);
     }
 
     /**
@@ -44,7 +50,7 @@ class TrueMarketValueClient extends VehicleClient
             'zip' => $zip,
         ];
 
-        return $this->request('tmv/tmvservice/calculatenewtmv', $data, 1, TmvResponse::class);
+        return $this->client->request('tmv/tmvservice/calculatenewtmv', $data, 1, TmvResponse::class);
     }
 
 }
