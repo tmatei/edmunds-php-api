@@ -1,0 +1,66 @@
+{
+	"make" : {
+		"id" : 200000081,
+		"name" : "BMW",
+		"niceName" : "bmw"
+	},
+	"model" : {
+		"id" : "BMW_M3",
+		"name" : "M3",
+		"niceName" : "m3"
+	},
+	"drivenWheels" : "rear wheel drive",
+	"numOfDoors" : "2",
+	"options" : [
+
+	],
+	"colors" : [
+
+	],
+	"manufacturerCode" : "1037",
+	"price" : {
+		"baseMSRP" : 58400.0,
+		"baseInvoice" : 53730.0,
+		"deliveryCharges" : 875.0,
+		"usedTmvRetail" : 28028.0,
+		"usedPrivateParty" : 26352.0,
+		"usedTradeIn" : 24643.0,
+		"estimateTmv" : false,
+		"tmvRecommendedRating" : 0
+	},
+	"categories" : {
+		"market" : "Luxury,Factory Tuner,High-Performance",
+		"EPAClass" : "Subcompact Cars",
+		"vehicleSize" : "Midsize",
+		"primaryBodyType" : "Car",
+		"vehicleStyle" : "Coupe",
+		"vehicleType" : "Car"
+	},
+	"vin" : "WBSWD9C56AP363320",
+	"squishVin" : "WBSWD9C5AP",
+	"years" : [
+		{
+			"id" : 100529689,
+			"year" : 2010,
+			"styles" : [
+				{
+					"id" : 101216058,
+					"name" : "2dr Coupe (4.0L 8cyl 6M)",
+					"submodel" : {
+						"body" : "Coupe",
+						"modelName" : "M3 Coupe",
+						"niceName" : "coupe"
+					},
+					"trim" : "Base"
+				}
+			]
+		}
+	],
+	"matchingType" : "SQUISHVIN",
+	"completeness" : 40,
+	"optionMatchPercent" : 0,
+	"MPG" : {
+		"highway" : "20",
+		"city" : "14"
+	}
+}

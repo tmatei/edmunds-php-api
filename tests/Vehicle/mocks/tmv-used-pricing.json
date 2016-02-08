@@ -1,0 +1,82 @@
+{
+  "tmv" : {
+    "nationalBasePrice" : {
+      "baseMSRP" : null,
+      "baseInvoice" : null,
+      "deliveryCharges" : null,
+      "tmv" : null,
+      "usedTmvRetail" : 21151.0,
+      "usedPrivateParty" : 19316.0,
+      "usedTradeIn" : 17388.0,
+      "estimateTmv" : null,
+      "tmvRecommendedRating" : null
+    },
+    "optionTMVPrices" : {
+
+    },
+    "regionalAdjustment" : {
+      "baseMSRP" : null,
+      "baseInvoice" : null,
+      "deliveryCharges" : null,
+      "tmv" : null,
+      "usedTmvRetail" : 331.0,
+      "usedPrivateParty" : 302.0,
+      "usedTradeIn" : 272.0,
+      "estimateTmv" : null,
+      "tmvRecommendedRating" : null
+    },
+    "colorAdjustment" : {
+      "baseMSRP" : null,
+      "baseInvoice" : null,
+      "deliveryCharges" : null,
+      "tmv" : null,
+      "usedTmvRetail" : 0.0,
+      "usedPrivateParty" : 0.0,
+      "usedTradeIn" : 0.0,
+      "estimateTmv" : null,
+      "tmvRecommendedRating" : null
+    },
+    "destinationCharge" : null,
+    "regionalAdFee" : null,
+    "totalWithOptions" : {
+      "baseMSRP" : null,
+      "baseInvoice" : null,
+      "deliveryCharges" : null,
+      "tmv" : null,
+      "usedTmvRetail" : 24899.0,
+      "usedPrivateParty" : 23035.0,
+      "usedTradeIn" : 21077.0,
+      "estimateTmv" : null,
+      "tmvRecommendedRating" : null
+    },
+    "incentivesAndRebates" : null,
+    "offerPrice" : null,
+    "certifiedUsedPrice" : 27837.0,
+    "conditionAdjustment" : {
+      "baseMSRP" : null,
+      "baseInvoice" : null,
+      "deliveryCharges" : null,
+      "tmv" : null,
+      "usedTmvRetail" : 0.0,
+      "usedPrivateParty" : 0.0,
+      "usedTradeIn" : 0.0,
+      "estimateTmv" : null,
+      "tmvRecommendedRating" : null
+    },
+    "mileageAdjustment" : {
+      "baseMSRP" : null,
+      "baseInvoice" : null,
+      "deliveryCharges" : null,
+      "tmv" : null,
+      "usedTmvRetail" : 3417.0,
+      "usedPrivateParty" : 3417.0,
+      "usedTradeIn" : 3417.0,
+      "estimateTmv" : null,
+      "tmvRecommendedRating" : null
+    },
+    "predictedChange" : null,
+    "predictedChangeIndicator" : null,
+    "gasGuzzlerTax" : null,
+    "estimatedTmv" : false
+  }
+}

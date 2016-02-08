@@ -1,0 +1,185 @@
+{
+  "make" : {
+    "id" : 200000238,
+    "name" : "Volkswagen",
+    "niceName" : "volkswagen"
+  },
+  "model" : {
+    "id" : "Volkswagen_Golf",
+    "name" : "Golf",
+    "niceName" : "golf"
+  },
+  "engine" : {
+    "id" : "200436004",
+    "name" : "1.8L Inline5 20 Valve   Gas Regular Unleaded  ",
+    "equipmentType" : "ENGINE",
+    "availability" : "STANDARD",
+    "compressionRatio" : 9.6,
+    "cylinder" : 4,
+    "size" : 1.8,
+    "displacement" : 1798.0,
+    "configuration" : "inline",
+    "fuelType" : "regular unleaded",
+    "horsepower" : 170,
+    "torque" : 200,
+    "totalValves" : 16,
+    "type" : "gas",
+    "code" : "4ITCG1.8",
+    "compressorType" : "turbocharger",
+    "rpm" : {
+      "horsepower" : 4500,
+      "torque" : 1600
+    },
+    "valve" : {
+      "gear" : "double overhead camshaft"
+    }
+  },
+  "transmission" : {
+    "id" : "200436005",
+    "name" : "5M",
+    "equipmentType" : "TRANSMISSION",
+    "availability" : "STANDARD",
+    "transmissionType" : "MANUAL",
+    "numberOfSpeeds" : "5"
+  },
+  "drivenWheels" : "front wheel drive",
+  "numOfDoors" : "2",
+  "options" : [
+    {
+      "category" : "Interior",
+      "options" : [
+        {
+          "id" : "200698096",
+          "name" : "Golf Rubber Mats",
+          "description" : "Set of 4 Monster mats with logo; Heavy duty trunk liner with CarGo Blocks",
+          "equipmentType" : "OPTION",
+          "availability" : "All except TDI"
+        },
+        {
+          "id" : "200698095",
+          "name" : "Door Sills",
+          "description" : "Set of 2 stainless steel door sills",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        },
+        {
+          "id" : "200698098",
+          "name" : "Luggage Net",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        },
+        {
+          "id" : "200698097",
+          "name" : "Golf Carpeted Mats",
+          "description" : "Set of 4 Mojo mats with logo; Heavy duty trunk liner with CarGo Blocks",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        },
+        {
+          "id" : "200698093",
+          "name" : "First Aid Kit",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        },
+        {
+          "id" : "200698092",
+          "name" : "Roadside Assistance Kit",
+          "description" : "Roadside assistance kit includes booster cables, warning triangle, LED flashlight, multi-tool, work gloves, PVC tape, blanket, poncho, whistle, cable ties and assorted bandages",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        }
+      ]
+    },
+    {
+      "category" : "Exterior",
+      "options" : [
+        {
+          "id" : "200698091",
+          "name" : "Security Wheel Locks",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        },
+        {
+          "id" : "200698100",
+          "name" : "Splash Guards",
+          "description" : "Set of 4 wheel splash guards",
+          "equipmentType" : "OPTION",
+          "availability" : "All"
+        }
+      ]
+    }
+  ],
+  "colors" : [
+    {
+      "category" : "Exterior",
+      "options" : [
+        {
+          "id" : "200698104",
+          "name" : "Platinum Grey Metallic",
+          "equipmentType" : "COLOR",
+          "availability" : "USED"
+        },
+        {
+          "id" : "200698107",
+          "name" : "Blue Silk Metallic",
+          "equipmentType" : "COLOR",
+          "availability" : "USED"
+        },
+        {
+          "id" : "200698106",
+          "name" : "Pure White",
+          "equipmentType" : "COLOR",
+          "availability" : "USED"
+        },
+        {
+          "id" : "200698102",
+          "name" : "Black",
+          "equipmentType" : "COLOR",
+          "availability" : "USED"
+        }
+      ]
+    }
+  ],
+  "categories" : {
+    "market" : "Hatchback",
+    "EPAClass" : "Compact Cars",
+    "vehicleSize" : "Compact",
+    "primaryBodyType" : "Car",
+    "vehicleStyle" : "2dr Hatchback",
+    "vehicleType" : "Car"
+  },
+  "squishVin" : "3VW817AUFM",
+  "years" : [
+    {
+      "id" : 200466065,
+      "year" : 2015,
+      "styles" : [
+        {
+          "id" : 200698067,
+          "name" : "TSI Launch Edition 2dr Hatchback (1.8L 4cyl Turbo 5M)",
+          "submodel" : {
+            "body" : "Hatchback",
+            "modelName" : "Golf Hatchback",
+            "niceName" : "hatchback"
+          },
+          "trim" : "TSI Launch Edition"
+        },
+        {
+          "id" : 200436003,
+          "name" : "TSI S 2dr Hatchback (1.8L 4cyl Turbo 5M)",
+          "submodel" : {
+            "body" : "Hatchback",
+            "modelName" : "Golf Hatchback",
+            "niceName" : "hatchback"
+          },
+          "trim" : "TSI S"
+        }
+      ]
+    }
+  ],
+  "matchingType" : "SQUISHVIN",
+  "MPG" : {
+    "highway" : "37",
+    "city" : "25"
+  }
+}
