@@ -15,13 +15,13 @@ use JMS\Serializer\Annotation\Type;
 class StylesResponse
 {
     /**
-     * @var StyleType
+     * @var StyleType[]
      * @Type("array<TudorMatei\Edmunds\Vehicle\Type\StyleType>")
      */
     private $styles;
 
     /**
-     * @return StyleType
+     * @return StyleType[]
      */
     public function getStyles()
     {
@@ -29,7 +29,7 @@ class StylesResponse
     }
 
     /**
-     * @param StyleType $styles
+     * @param StyleType[] $styles
      */
     public function setStyles($styles)
     {
