@@ -1,9 +1,9 @@
 {
-  "name": "tmatei/edmunds-api",
+  "name": "tmatei/edmunds-php-api",
   "type": "library",
   "description": "Edmunds API",
   "keywords": ["edmunds", "api"],
-  "homepage": "https://www.github.com/rfink/edmunds-php-api",
+  "homepage": "https://www.github.com/tmatei/edmunds-php-api",
   "license": "MIT",
   "authors": [
     {
