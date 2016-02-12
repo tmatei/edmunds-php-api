@@ -1,11 +1,11 @@
 <?php
 
-namespace TudorMatei\Edmunds\Tests\Vehicle;
+namespace Edmunds\Tests\Vehicle;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
-use TudorMatei\Edmunds\Tests\BaseTest;
-use TudorMatei\Edmunds\Vehicle\VehicleClient;
+use Edmunds\Tests\BaseTest;
+use Edmunds\Vehicle\VehicleClient;
 
 /**
  * Created by IntelliJ IDEA.

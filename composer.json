@@ -21,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "TudorMatei\\Edmunds\\": "src/TudorMatei/Edmunds"
+      "Edmunds\\": "src/Edmunds"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "TudorMatei\\Edmunds\\Tests\\": "tests"
+      "Edmunds\\Tests\\": "tests"
     }
   }
 }

@@ -1,11 +1,11 @@
 <?php
 
-namespace TudorMatei\Edmunds\Tests\Vehicle\Client;
+namespace Edmunds\Tests\Vehicle\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
-use TudorMatei\Edmunds\Tests\Vehicle\VehicleClientTest;
-use TudorMatei\Edmunds\Vehicle\Response\VinDecodingResponse;
-use TudorMatei\Edmunds\Vehicle\Service\VinDecodingService;
+use Edmunds\Tests\Vehicle\VehicleClientTest;
+use Edmunds\Vehicle\Response\VinDecodingResponse;
+use Edmunds\Vehicle\Service\VinDecodingService;
 
 /**
  * Created by IntelliJ IDEA.

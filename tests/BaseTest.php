@@ -1,6 +1,6 @@
 <?php
 
-namespace TudorMatei\Edmunds\Tests;
+namespace Edmunds\Tests;
 
 /**
  * Created by IntelliJ IDEA.

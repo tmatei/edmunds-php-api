@@ -1,12 +1,12 @@
 <?php
 
-namespace TudorMatei\Edmunds\Tests\Vehicle\Service;
+namespace Edmunds\Tests\Vehicle\Service;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Response;
-use TudorMatei\Edmunds\Tests\Vehicle\VehicleClientTest;
-use TudorMatei\Edmunds\Vehicle\Response\StyleResponse;
-use TudorMatei\Edmunds\Vehicle\Response\StylesResponse;
-use TudorMatei\Edmunds\Vehicle\Service\StyleService;
+use Edmunds\Tests\Vehicle\VehicleClientTest;
+use Edmunds\Vehicle\Response\StyleResponse;
+use Edmunds\Vehicle\Response\StylesResponse;
+use Edmunds\Vehicle\Service\StyleService;
 
 /**
  * Created by IntelliJ IDEA.
