@@ -14,13 +14,13 @@ use JMS\Serializer\Annotation\Type;
 class MakesResponse
 {
     /**
-     * @var MakeType
+     * @var MakeType[]
      * @Type("array<Edmunds\Vehicle\Type\MakeType>")
      */
     private $makes;
 
     /**
-     * @return MakeType
+     * @return MakeType[]
      */
     public function getMakes()
     {
@@ -28,7 +28,7 @@ class MakesResponse
     }
 
     /**
-     * @param MakeType $makes
+     * @param MakeType[] $makes
      */
     public function setMakes($makes)
     {
