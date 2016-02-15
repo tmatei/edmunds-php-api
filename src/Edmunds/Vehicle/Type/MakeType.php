@@ -31,7 +31,7 @@ class MakeType
     protected $niceName;
 
     /**
-     * @var ModelType
+     * @var ModelType[]
      * @Type("array<Edmunds\Vehicle\Type\ModelType>")
      */
     private $models;
@@ -85,7 +85,7 @@ class MakeType
     }
 
     /**
-     * @return ModelType
+     * @return ModelType[]
      */
     public function getModels()
     {
@@ -93,7 +93,7 @@ class MakeType
     }
 
     /**
-     * @param ModelType $models
+     * @param ModelType[] $models
      */
     public function setModels($models)
     {

@@ -31,7 +31,7 @@ class ModelType
     protected $niceName;
 
     /**
-     * @var YearType
+     * @var YearType[]
      * @Type("array<Edmunds\Vehicle\Type\YearType>")
      */
     private $years;
@@ -85,7 +85,7 @@ class ModelType
     }
 
     /**
-     * @return YearType
+     * @return YearType[]
      */
     public function getYears()
     {
@@ -93,7 +93,7 @@ class ModelType
     }
 
     /**
-     * @param YearType $years
+     * @param YearType[] $years
      */
     public function setYears($years)
     {
